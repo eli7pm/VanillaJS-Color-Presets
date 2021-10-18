@@ -1,0 +1,14 @@
+{
+  "name": "pspdfkit-vanillajs",
+  "version": "1.0.0",
+  "description": "pspdkit vanillaJS project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "eli",
+  "license": "ISC",
+  "dependencies": {
+    "pspdfkit": "^2021.5.3"
+  }
+}
