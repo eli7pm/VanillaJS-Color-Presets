@@ -1,0 +1,520 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700&font-display=swap');
+
+* {
+	font-family: 'Roboto', sans-serif !important;
+}
+
+body,
+.PSPDFKit-Sidebar,
+.PSPDFKit-Sidebar > div > div > div[class^='PSPDFKit-'],
+.PSPDFKit-Toolbar,
+.PSPDFKit-Viewport,
+.PSPDFKit-Signature-Dialog-Canvas,
+.GetBusy-Configuration-Annotation-Tooltip-Assign-Dropdown-Item:hover,
+.PSPDFKit-Signature-Dialog-Picker-Item {
+	background: #f4f5f7;
+}
+
+body,
+.PSPDFKit-Sidebar *,
+.PSPDFKit-Toolbar *,
+.GetBusy-Configuration-Annotation,
+.PSPDFKit-Signature-Dialog-Clear-Signature-Button,
+.PSPDFKit-Signature-Dialog-Cancel-Button,
+.PSPDFKit-Signature-Dialog-Done-Button,
+.PSPDFKit-Signature-Dialog-Sign-Here-Label {
+	font-size: 13px;
+	font-weight: 500;
+}
+
+body {
+	line-height: 18px;
+}
+
+.PSPDFKit-Toolbar {
+	box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.1);
+	height: 56px;
+	min-height: 56px;
+}
+
+.PSPDFKit-Toolbar *,
+.PSPDFKit-Sidebar-Thumbnails-Page-Label,
+.GetBusy-Configuration-Annotation {
+	color: rgba(0, 0, 0, 0.6);
+}
+
+.PSPDFKit-Page-Indicator *,
+.PSPDFKit-Page-Indicator-Next:focus,
+.PSPDFKit-Page-Indicator-Next:hover,
+.PSPDFKit-Page-Indicator-Prev:focus,
+.PSPDFKit-Page-Indicator-Prev:hover,
+.PSPDFKit-Sidebar-Dragger,
+.PSPDFKit-Sidebar-Thumbnails-Page:focus,
+.PSPDFKit-Sidebar-Thumbnails-Page:hover,
+.PSPDFKit-Sidebar-Thumbnails-Page-Label,
+.PSPDFKit-Toolbar-Button:focus,
+.PSPDFKit-Toolbar-Button:hover,
+.PSPDFKit-Toolbar-Button-active {
+	background: transparent !important;
+}
+
+.PSPDFKit-Page-Indicator-Input {
+	outline: 0 none transparent;
+	width: 30px;
+}
+
+.PSPDFKit-Page-Indicator-Next,
+.PSPDFKit-Page-Indicator-Prev,
+.PSPDFKit-Tool-Button svg {
+	height: 24px;
+	width: 24px;
+}
+
+.PSPDFKit-Page-Indicator {
+	flex: 1;
+	justify-content: center;
+}
+
+.PSPDFKit-Sidebar-Thumbnails-Page-Image {
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
+}
+
+.PSPDFKit-Sidebar-Thumbnails-Page-Label {
+	text-shadow: none;
+}
+
+.PSPDFKit-Sidebar-Thumbnails-Page-Selected
+	.PSPDFKit-Sidebar-Thumbnails-Page-Label {
+	background: rgba(0, 0, 0, 0.6) !important;
+	color: #f4f5f7 !important;
+}
+
+.PSPDFKit-Sidebar-Thumbnails-Page-Selected
+	.PSPDFKit-Sidebar-Thumbnails-Page-Image {
+	border: 3px solid rgb(68, 154, 157);
+}
+
+.PSPDFKit-Sidebar-Thumbnails-Page,
+.PSPDFKit-Toolbar,
+.PSPDFKit-Signature-Dialog-Canvas,
+.PSPDFKit-Signature-Dialog-Picker-Item {
+	border-radius: 0;
+}
+
+.PSPDFKit-Sidebar > div > div > div > div {
+	overflow-x: hidden !important;
+	overflow-y: auto !important;
+}
+
+.PSPDFKit-Tool-Button {
+	padding: 0 8px;
+}
+
+.PSPDFKit-Tool-Button.toolbar-download-button {
+	margin: 0 24px 0 0;
+}
+
+.PSPDFKit-Tool-Button g.fillable {
+	fill: rgba(0, 0, 0, 0.6);
+}
+
+.PSPDFKit-Tool-Button .PSPDFKit-Icon-SidebarThumbnails path.expanded,
+.PSPDFKit-Tool-Button.PSPDFKit-Tool-Button-active
+	.PSPDFKit-Icon-SidebarThumbnails
+	path.collapsed,
+.PSPDFKit-Annotation-Widget-Signature-Badge,
+.PSPDFKit-Popover-Annotation-Tooltip .PSPDFKit-Popover-Arrow-Top,
+.PSPDFKit-Popover-Annotation-Tooltip .PSPDFKit-Popover-Arrow-Bottom,
+.GetBusy-Configuration-Annotation-Tooltip-Assign-Dropdown,
+.PSPDFKit-Signature-Dialog-Store-Signature-Checkbox,
+.PSPDFKit-Modal-Divider,
+.PSPDFKit-Signature-Dialog-Add-Signature-Button {
+	display: none;
+}
+
+.PSPDFKit-Tool-Button .PSPDFKit-Icon-SidebarThumbnails path.collapsed,
+.PSPDFKit-Tool-Button.PSPDFKit-Tool-Button-active
+	.PSPDFKit-Icon-SidebarThumbnails
+	path.expanded {
+	display: block;
+}
+
+.PSPDFKit-Popover-Annotation-Tooltip .PSPDFKit-Popover-Top,
+.PSPDFKit-Popover-Annotation-Tooltip .PSPDFKit-Popover-Bottom {
+	background: none;
+}
+
+.PSPDFKit-Annotation-Widget.PSPDFKit-Annotation-Widget-Signature,
+.PSPDFKit-Annotation-Widget.PSPDFKit-Annotation-Widget-Text {
+	outline: 0 none transparent !important;
+	background-color: rgba(27, 181, 158, 0.2) !important;
+	border-radius: 2px;
+}
+
+.PSPDFKit-Annotation-Widget.PSPDFKit-Annotation-Widget-Signature:hover,
+.PSPDFKit-Annotation-Widget.PSPDFKit-Annotation-Widget-Text:hover {
+	border: 1px solid #1bb59e !important;
+	cursor: pointer;
+}
+
+.PSPDFKit-Annotation-Widget.PSPDFKit-Annotation-Widget-Signature:focus {
+	border: 1px solid #1bb59e !important;
+}
+
+.PSPDFKit-Annotation-Widget.PSPDFKit-Annotation-Widget-Text {
+	border: 1px solid transparent !important;
+	resize: none;
+	overflow: hidden;
+	color: rgba(0, 0, 0, 0.87) !important;
+}
+
+.PSPDFKit-Annotation-Widget.PSPDFKit-Annotation-Widget-Text:focus {
+	background-color: #ffffff !important;
+	border: 1px solid #1bb59e !important;
+	cursor: auto;
+	outline: 0 none transparent;
+}
+
+.PSPDFKit-Annotation-Widget.PSPDFKit-Annotation-Widget-Text.GetBusy-Viewer-Annotation-NotEmpty {
+	background-color: #ffffff !important;
+}
+
+.PSPDFKit-Annotation-Widget.PSPDFKit-Annotation-Widget-Signature.PSPDFKit-Annotation-Widget-read-only,
+.PSPDFKit-Annotation-Widget.PSPDFKit-Annotation-Widget-Text.PSPDFKit-Annotation-Widget-read-only {
+	background: none !important;
+}
+.PSPDFKit-Annotation-Widget.PSPDFKit-Annotation-Widget-Signature.PSPDFKit-Annotation-Widget-read-only {
+	visibility: hidden;
+}
+
+.PSPDFKit-Annotation-Widget.PSPDFKit-Annotation-Widget-Signature.PSPDFKit-Annotation-Widget-read-only:hover,
+.PSPDFKit-Annotation-Widget.PSPDFKit-Annotation-Widget-Text.PSPDFKit-Annotation-Widget-read-only:hover {
+	outline: 0 none transparent !important;
+	border: 1px solid transparent !important;
+	cursor: auto;
+	color: rgba(0, 0, 0, 0.87) !important;
+}
+
+.PSPDFKit-Annotation-Widget.GetBusy-Viewer-Annotation-Widget-Highlighted {
+	border: 1px solid #1bb59e !important;
+}
+
+.PSPDFKit-Annotation-Widget.GetBusy-Viewer-Annotation-Widget-Highlighted.PSPDFKit-Annotation-Widget-read-only {
+	border: none !important;
+}
+
+.GetBusy-Viewer-Annotation {
+	height: 100%;
+	justify-content: center;
+	align-items: center;
+	color: #1bb59e;
+	display: flex;
+	font-size: 10px; /* The box is scaled by 1.25 so this retains text at 13px */
+}
+
+.GetBusy-Viewer-Annotation.GetBusy-Viewer-Annotation-Text {
+	justify-content: left;
+	padding: 5px 0 0 5px;
+	align-items: unset;
+}
+
+.GetBusy-Viewer-Annotation.GetBusy-Viewer-Annotation-DateSigned {
+	color: #000000;
+	text-align: left;
+	justify-content: left;
+	transform: none !important;
+	font-size: 13px;
+}
+
+.GetBusy-Viewer-Annotation-DateSigned-Input {
+	color: #000000 !important;
+	font-size: 13px !important;
+	font-weight: 500;
+	padding: 0 !important;
+}
+
+.PSPDFKit-Annotation-Widget.PSPDFKit-Annotation-Widget-Text.PSPDFKit-Annotation-Widget-read-only.GetBusy-Viewer-Annotation-DateSigned-Input {
+	border: none !important;
+}
+
+.GetBusy-Configuration-Annotation {
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #e0e3e8;
+}
+
+.GetBusy-Annotation-Wrapper {
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	pointer-events: all;
+	cursor: pointer;
+}
+
+.GetBusy-Annotation-Wrapper:not(.GetBusy-Annotation-Wrapper-MultiLine)
+	.GetBusy-Annotation-Assignee::before {
+	content: ' ';
+	display: inline;
+}
+
+.GetBusy-Annotation-Wrapper.GetBusy-Annotation-Wrapper-MultiLine
+	.GetBusy-Annotation-Assignee {
+	display: block;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	pointer-events: all;
+	cursor: pointer;
+}
+
+.GetBusy-Configuration-Annotation.GetBusy-Configuration-Annotation-Text {
+	padding: 5px;
+	justify-content: left;
+	align-items: unset;
+}
+
+.GetBusy-Configuration-Annotation.GetBusy-Configuration-Annotation-SignatureDate {
+	padding: 5px;
+	justify-content: left;
+}
+
+.GetBusy-Configuration-Annotation-Tooltip-Assign {
+	position: relative;
+}
+
+.GetBusy-Configuration-Annotation-Tooltip-Assign-Button,
+.GetBusy-Configuration-Annotation-Tooltip-Rename-Button {
+	border: none;
+	padding: 4px 10px;
+	border-radius: 5px;
+	font-size: 12px;
+	font-weight: 500;
+	line-height: 18px;
+	height: 26px;
+	cursor: pointer;
+	color: #ffffff;
+}
+
+.GetBusy-Configuration-Annotation-Tooltip-Assign-Dropdown {
+	position: absolute;
+	top: calc(100% + 4px);
+	left: 0;
+	box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14),
+		0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.2);
+	border-radius: 4px;
+}
+
+.GetBusy-Configuration-Annotation-Tooltip-Assign-Dropdown-List,
+.GetBusy-Configuration-Annotation-Tooltip-Assign-Dropdown-Item {
+	margin: 0;
+}
+
+.GetBusy-Configuration-Annotation-Tooltip-Assign-Dropdown-List {
+	list-style: none;
+	padding: 8px 0;
+}
+
+.GetBusy-Configuration-Annotation-Tooltip-Assign-Dropdown-Item {
+	cursor: pointer;
+	text-align: left;
+	padding: 6px 16px;
+	color: rgb(0, 0, 0);
+	font-size: 13px;
+	font-weight: 400;
+	letter-spacing: 0.25px;
+	line-height: 18px;
+}
+
+.GetBusy-Configuration-Annotation-Tooltip-Assign-Button,
+.GetBusy-Configuration-Annotation-Tooltip-Assign-Dropdown-Item:active {
+	background: rgb(68, 154, 157);
+}
+
+.GetBusy-Configuration-Annotation-Tooltip-Assign-Open
+	.GetBusy-Configuration-Annotation-Tooltip-Assign-Dropdown {
+	display: block;
+}
+
+.GetBusy-Configuration-Annotation-Tooltip-Delete {
+	background: #e84344;
+	border: none;
+	border-radius: 5px;
+	width: 30px;
+	height: 26px;
+	cursor: pointer;
+	padding: 0 5px;
+	margin-left: 8px;
+}
+
+.PSPDFKit-Annotation-Tool-Node {
+	background: none !important;
+	border: none !important;
+}
+
+.GetBusy-Configuration-Annotation-Tooltip-Delete-Icon {
+	width: 20px;
+	height: 20px;
+	display: block;
+}
+
+.GetBusy-Configuration-Annotation-Tooltip-Delete-Icon svg {
+	vertical-align: middle;
+	margin-top: 1px;
+}
+
+.GetBusy-Configuration-Annotation-Tooltip-Delete-Icon path {
+	fill: #ffffff;
+}
+
+button.PSPDFKit-Annotation-Widget-Signature {
+	border-radius: 2px;
+	vertical-align: middle;
+}
+
+.PSPDFKit-Resize-Anchor {
+	fill: rgb(68, 154, 157);
+}
+
+.PSPDFKit-Resize-Anchor,
+.PSPDFKit-Selection-Outline-Border {
+	stroke: rgb(68, 154, 157);
+}
+
+.PSPDFKit-Annotation-Tooltip {
+	padding: 0;
+	justify-content: flex-start;
+}
+
+.PSPDFKit-Modal-Dialog {
+	box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14),
+		0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px 0 rgba(0, 0, 0, 0.2);
+	border-radius: 16px;
+	padding: 21px;
+}
+
+.GetBusy-Configuration-Annotation-Tooltip-Assign-Dropdown,
+.PSPDFKit-Modal-Dialog {
+	background: #ffffff;
+}
+
+.GetBusy-Configuration-Annotation,
+.PSPDFKit-Signature-Dialog-Store-Signature-Checkbox + div[class^='PSPDFKit-'] {
+	width: 100%;
+}
+
+.PSPDFKit-Signature-Dialog-Clear-Signature-Button,
+.PSPDFKit-Signature-Dialog-Cancel-Button,
+.PSPDFKit-Signature-Dialog-Done-Button {
+	border: none;
+	background: none;
+	color: rgb(68, 154, 157) !important;
+	font-size: 14px;
+	text-align: center;
+	line-height: 20px;
+	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+		box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+		border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+	letter-spacing: 0.4px;
+	padding: 6px 24px;
+	border-radius: 18px;
+}
+
+.PSPDFKit-Signature-Dialog-Clear-Signature-Button:hover,
+.PSPDFKit-Signature-Dialog-Cancel-Button:hover,
+.PSPDFKit-Signature-Dialog-Done-Button:hover {
+	background-color: #eceef1;
+	color: rgb(68, 154, 157);
+}
+
+.PSPDFKit-Signature-Dialog-Clear-Signature-Button:disabled,
+.PSPDFKit-Signature-Dialog-Cancel-Button:disabled,
+.PSPDFKit-Signature-Dialog-Done-Button:disabled {
+	color: rgba(0, 0, 0, 0.3) !important;
+	background-color: transparent !important;
+}
+
+.PSPDFKit-Signature-Dialog > div[class^='PSPDFKit-']:nth-child(1) {
+	margin-top: 0;
+	margin-bottom: 16px;
+}
+
+.PSPDFKit-Signature-Dialog div[class^='PSPDFKit-']:nth-child(2) {
+	margin: 0;
+}
+
+.PSPDFKit-Signature-Dialog div[class^='PSPDFKit-']:nth-child(3) {
+	margin-top: 16px;
+	margin-bottom: 0;
+}
+
+.PSPDFKit-Signature-Dialog .PSPDFKit-Modal-Section:last-child {
+	padding-top: 0;
+}
+
+.PSPDFKit-Signature-Dialog-Sign-Here-Label {
+	color: rgba(0, 0, 0, 0.3);
+	font-size: 15px;
+	font-weight: 400;
+	text-align: center;
+	line-height: 20px;
+}
+
+.PSPDFKit-Signature-Dialog-Picker-Item-Delete-Button span {
+	display: none;
+}
+
+.PSPDFKit-Signature-Dialog-Signature-Heading,
+.PSPDFKit-Signature-Dialog-Color-Picker {
+	visibility: hidden;
+	position: relative;
+}
+
+.PSPDFKit-Signature-Dialog-Signature-Heading {
+	height: 40px;
+	display: flex;
+	align-items: center;
+}
+
+.PSPDFKit-Signature-Dialog-Color-Picker:after {
+	display: block;
+}
+
+.PSPDFKit-Signature-Dialog-Signature-Heading:after,
+.PSPDFKit-Signature-Dialog-Color-Picker:after {
+	content: 'Signature';
+	position: absolute;
+	visibility: visible;
+	height: 24px;
+	color: #000000;
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 24px;
+	left: 0;
+}
+
+.GetBusy-Configuration-Annotation-Tooltip-Rename-Button {
+	background: #676767;
+	margin-left: 8px;
+}
+
+.PSPDFKit-Digital-Signatures-Status-Text {
+	line-height: 24px;
+}
+
+@media all and (max-width: 969px) {
+	.PSPDFKit-Page-Indicator > div {
+		display: flex !important;
+		flex: 1 !important;
+		justify-content: space-between !important;
+	}
+
+	.PSPDFKit-Page-Indicator > div + div {
+		display: none !important;
+	}
+
+	.PSPDFKit-Tool-Button.toolbar-download-button {
+		margin: 0;
+	}
+}
